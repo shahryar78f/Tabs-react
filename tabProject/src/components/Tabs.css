@@ -1,0 +1,148 @@
+.tabs-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 1px solid transparent;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab.active {
+  border-color: #ccc;
+  border-bottom-color: #fff;
+  font-weight: bold;
+}
+
+.tab-1 {
+  background-color: #f1faee;
+  color: #1d3557;
+}
+
+.tab-2 {
+  background-color: #ffe8d6;
+  color: #6d597a;
+}
+
+.tab-3 {
+  background-color: #d8f3dc;
+  color: #40916c;
+}
+
+.tab-1.active {
+  background-color: #a8dadc;
+  color: #1d3557;
+}
+
+.tab-2.active {
+  background-color: #f4a261;
+  color: #6d597a;
+}
+
+.tab-3.active {
+  background-color: #52b788;
+  color: #40916c;
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab-content-1 {
+  background-color: #f1faee;
+  color: #1d3557;
+}
+
+.tab-content-2 {
+  background-color: #ffe8d6;
+  color: #6d597a;
+}
+
+.tab-content-3 {
+  background-color: #d8f3dc;
+  color: #40916c;
+}
+
+.number {
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: black;
+  padding: 3px 5px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.add-tab-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-tab-form input[type="text"],
+.add-tab-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-tab-form input[type="text"]:focus,
+.add-tab-form textarea:focus {
+  border-color: #40916c;
+  box-shadow: 0 0 5px rgba(64, 145, 108, 0.5);
+  outline: none;
+}
+
+.add-tab-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-tab-form button {
+  padding: 10px 20px;
+  background-color: #40916c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-tab-form button:hover {
+  background-color: #2d6a4f;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
